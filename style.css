@@ -1,0 +1,90 @@
+body {
+  background: #BE93C5;
+  /* fallback for old browsers
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+  /* Chrome 10-25, Safari 5.1-6
+  background: linear-gradient(to right, #7BC6CC, #BE93C5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* navbar */
+.navbar {
+  transition: all 0.4s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #DBD9EB;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+    color: #555;
+  }
+}
+
+svg{
+  width:100%;
+  position:relative;
+  height: 100vh;
+}
+
+.holder{
+  position:absolute;
+  top: 100px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.heading{
+  margin-top: 60px;
+  font-size: 70px;
+  color:#f5f6fa;
+  text-align:center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.tagline{
+  color:#f5f6fa;
+  text-align:center;
+}
