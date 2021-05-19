@@ -198,7 +198,11 @@ body {
   margin-top: 80px;
   font-family: 'Poppins', sans-serif;
 	padding: 30px 135px 30px 135px;
-	background-color: #f9ebff;
+  background: #BE93C5; /* fallback for old browsersn */
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7BC6CC, #BE93C5);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .grid-container{
@@ -258,7 +262,7 @@ body {
 	letter-spacing: .5px;
 	margin: 10px 0px 80px 10px;
 	text-align: center;
-	color: #BE93C5;
+	color: #f9ebff;
 	font-size: 1.5rem;
   line-height: 2rem;
 }
